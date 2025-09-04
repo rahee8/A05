@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Hotline</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="/style.css" />
+
+		<title>Emergency Hotline</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<section class="nav-bar">
+				<div class="nav-logo">
+					<img
+						src="/assets/map-logo.png"
+						alt="Bangladesh Map Logo"
+						class="nav-logo-icon"
+					/>
+					<div class="nav-logo-name">Emergency<br />Service</div>
+				</div>
+
+				<div class="nav-status">
+					<div class="fav-status">
+						<span class="fav-count">0</span>
+						<img
+							src="/assets/heart.png"
+							alt="Heart Icon"
+							class="fav-heart-icon"
+						/>
+					</div>
+					<div class="coin-status">
+						<span class="coin-count">100</span>
+						<img src="/assets/coin.png" alt="Coin Icon" class="coin-icon" />
+					</div>
+					<div class="copy-status">
+						<span class="copy-count">0</span>
+						<span>Copy</span>
+					</div>
+				</div>
+			</section>
+			<section class="hero-section">
+				<img
+					src="/assets/map-logo-white.png"
+					alt="Bangladesh Map Image"
+					class="hero-img"
+				/>
+				<div class="hero-text">
+					<h1 class="hero-heading">Emergency Service Directory</h1>
+					<h4 class="hero-slogan">
+						Government Emergency Services at Your Fingertip – A Project by
+						Government of the People’s Republic of Bangladesh
+					</h4>
+				</div>
+			</section>
+			<section class="main-section">
+				<section class="hotline-section">
+					<div class="single-hotl-sec">
+						<div class="single-hotl-nav">
+							<img
+								src="/assets/emergency-light.png"
+								alt="Emergency Light Icon"
+								class="sgl-hotl-nav-logo"
+							/>
+							<img
+								src="/assets/heart-white.png"
+								alt="Heart Icon"
+								class="sgl-hotl-nav-hrt-icon"
+							/>
+						</div>
+						<div class="single-hotl-desc">
+							<h3 class="sgl-hotl-des-title">National Emergency Number</h3>
+							<p class="sgl-hotl-des-subtitle">National Emergency</p>
+						</div>
+						<div class="single-hotl-num-lbl">
+							<h4 class="sgl-hotl-num">999</h4>
+							<p class="sgl-hotl-lbl">All</p>
+						</div>
+						<div class="single-hotl-btns">
+							<div class="copy-btn">
+								<img
+									src="/assets/copy.png"
+									alt="Copy Icon"
+									class="copy-btn-icon"
+								/>
+								<button>Copy</button>
+							</div>
+							<div class="call-btn" data-label="All">
+								<img
+									src="/assets/telephone.png"
+									alt="Call Icon"
+									class="call-btn-icon"
+								/>
+								<button>Call</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="history-section">
+					<div class="history-sec-nav">
+						<div class="call-history">
+							<img
+								src="/assets/history.png"
+								alt="Call History Icon"
+								class="call-history-icon"
+							/>
+							<div>Call History</div>
+						</div>
+						<button class="clear-btn">Clear</button>
+					</div>
+					<div class="history-details-container">
+						<div class="history-details">
+							<div class="history-name-num">
+								<div class="history-name">Fire Service Number</div>
+								<div class="history-num">999</div>
+							</div>
+							<div class="history-time">11:36:58 AM</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+
+		<script src="/script.js"></script>
+	</body>
 </html>
