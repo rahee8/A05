@@ -1,4 +1,4 @@
-1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?<br>
 Answer. getElementById - Finds the first element of HTML matching the id and returns as DOM Object.
         getElementByClassName - Finds the elements of HTML matching the class name and returns as collection DOM Objects.
         querySelector - 	Finds the first element of HTML that matches the CSS selector and returns as DOM Object.
