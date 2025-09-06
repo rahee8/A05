@@ -184,7 +184,7 @@ const displayCallHistory = (label) => {
 							<div class="history-num">${obj.number}</div>
 						</div>
                         <div class="history-time">${
-													time.hours % 12 !== 0 ? time % 12 : 12
+													time.hours % 12 !== 0 ? (time.hours % 12 < 10 ? `0${time.hours % 12 }` : time.hours % 12) : 12
 												}:${
 		time.minutes < 10 ? `0${time.minutes}` : time.minutes
 	}:${time.seconds < 10 ? `0${time.seconds}` : time.seconds} ${
@@ -217,7 +217,7 @@ document.addEventListener(`click`, (e) => {
 			labelCoins.textContent = coins;
 			displayCallHistory(e.target.closest(`.call-btn`).dataset.label);
 		} else {
-			alert(`Insufficient Balance!`);
+			alert(`❌ Insufficient Balance! You need at least 20 coins.`);
 		}
 	}
 
