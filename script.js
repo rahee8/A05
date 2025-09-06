@@ -129,7 +129,7 @@ const displayHotlineNumbers = () => {
 							<img
 								src=${obj.icon}
 								alt=${obj.alt}
-								class="sgl-hotl-nav-logo"
+								class="sgl-hotl-nav-logo ${obj === police ? `color-change` : ``}"
 							/>
 							<img
 								src="/assets/heart-white.png"
@@ -146,22 +146,22 @@ const displayHotlineNumbers = () => {
 							<p class="sgl-hotl-lbl">${obj.label}</p>
 						</div>
 						<div class="single-hotl-btns">
-							<div class="copy-btn" data-label=${obj.label}>
+							<button class="copy-btn" data-label=${obj.label}>
 								<img
 									src="/assets/copy.png"
 									alt="Copy Icon"
 									class="copy-btn-icon"
 								/>
-								<button>Copy</button>
-							</div>
-							<div class="call-btn" data-label=${obj.label}>
+								<div>Copy</div>
+							</button>
+							<button class="call-btn" data-label=${obj.label}>
 								<img
 									src="/assets/telephone.png"
 									alt="Call Icon"
 									class="call-btn-icon"
 								/>
-								<button>Call</button>
-							</div>
+								<div>Call</div>
+							</button>
 						</div>
 					</div>`;
 
@@ -187,7 +187,7 @@ const displayCallHistory = (label) => {
 		time.minutes
 	}:${time.seconds} ${time.meridiem}</div></div>`;
 
-	alert(`📞 Calling ${obj.number} ...`);
+	alert(`📞 Calling ${obj.title} ${obj.number} ...`);
 
 	historyDetailsContainer.insertAdjacentHTML(`beforeend`, html);
 };

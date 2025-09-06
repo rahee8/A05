@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="/queries.css" />
 
 		<title>Emergency Hotline</title>
 	</head>
@@ -35,7 +36,7 @@
 					</div>
 					<div class="copy-status">
 						<span class="copy-count">0</span>
-						<span>Copy</span>
+						<span class="copy-icon">Copy</span>
 					</div>
 				</div>
 			</section>
@@ -77,22 +78,22 @@
 							<p class="sgl-hotl-lbl">All</p>
 						</div>
 						<div class="single-hotl-btns">
-							<div class="copy-btn">
+							<button class="copy-btn">
 								<img
 									src="/assets/copy.png"
 									alt="Copy Icon"
 									class="copy-btn-icon"
 								/>
-								<button>Copy</button>
-							</div>
-							<div class="call-btn" data-label="All">
+								<div class="copy-btn-name">Copy</div>
+							</button>
+							<button class="call-btn" data-label="All">
 								<img
 									src="/assets/telephone.png"
 									alt="Call Icon"
 									class="call-btn-icon"
 								/>
-								<button>Call</button>
-							</div>
+								<div class="call-btn-name">Call</div>
+							</button>
 						</div>
 					</div>
 				</section>
@@ -104,7 +105,7 @@
 								alt="Call History Icon"
 								class="call-history-icon"
 							/>
-							<div>Call History</div>
+							<div class="call-history-name">Call History</div>
 						</div>
 						<button class="clear-btn">Clear</button>
 					</div>
