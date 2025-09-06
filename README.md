@@ -1,4 +1,4 @@
-1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?<br>
+`1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 Answer. getElementById - Finds the first element of HTML matching the id and returns as DOM Object.
         getElementByClassName - Finds the elements of HTML matching the class name and returns as collection DOM Objects.
         querySelector - 	Finds the first element of HTML that matches the CSS selector and returns as DOM Object.
@@ -18,4 +18,4 @@ Ans. Attaching one event listener in parent instead of many event listener in ch
 
 5.What is the difference between preventDefault() and stopPropagation() methods?
 Ans. preventDefault() - stops element's default action like submitting form.
-    stopPropagation() - stops bubbling so that it does not go from child to parent.
+    stopPropagation() - stops bubbling so that it does not go from child to parent.`
