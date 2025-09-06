@@ -176,16 +176,20 @@ const displayCallHistory = (label) => {
 		hours: new Date().getHours(),
 		minutes: new Date().getMinutes(),
 		seconds: new Date().getSeconds(),
-		meridiem: new Date().getHours() > 12 ? `PM` : `AM`,
+		meridiem: new Date().getHours() > 11 ? `PM` : `AM`,
 	};
 
 	const html = `<div class="history-details"><div class="history-name-num">
 							<div class="history-name">${obj.title}</div>
 							<div class="history-num">${obj.number}</div>
 						</div>
-                        <div class="history-time">${time.hours % 12}:${
-		time.minutes
-	}:${time.seconds} ${time.meridiem}</div></div>`;
+                        <div class="history-time">${
+													time.hours % 12 !== 0 ? time % 12 : 12
+												}:${
+		time.minutes < 10 ? `0${time.minutes}` : time.minutes
+	}:${time.seconds < 10 ? `0${time.seconds}` : time.seconds} ${
+		time.meridiem
+	}</div></div>`;
 
 	alert(`📞 Calling ${obj.title} ${obj.number} ...`);
 

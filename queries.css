@@ -1,0 +1,62 @@
+@media (max-width: 77em) {
+	.main-section {
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.hotline-section {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 59em) {
+	.main-section {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.hotline-section {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (max-width: 48em) {
+	html {
+		font-size: 56.25%;
+	}
+}
+
+@media (max-width: 41em) {
+	html {
+		font-size: 50%;
+	}
+}
+
+@media (max-width: 37em) {
+	html {
+		font-size: 43.75%;
+	}
+}
+
+@media (max-width: 32em) {
+	html {
+		font-size: 37.5%;
+	}
+}
+
+@media (max-width: 27em) {
+	html {
+		font-size: 31.25%;
+	}
+	.main-section {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+	.nav-bar {
+		margin-bottom: 3rem;
+	}
+}
+
+@media (max-width: 23em) {
+	html {
+		font-size: 25%;
+	}
+}
